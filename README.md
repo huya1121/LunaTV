@@ -72,7 +72,7 @@
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/moontechlab/lunatv:latest
+    image: ghcr.io/huya1121/lunatv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -82,7 +82,7 @@ services:
       - PASSWORD=admin_password
       - NEXT_PUBLIC_STORAGE_TYPE=kvrocks
       - KVROCKS_URL=redis://moontv-kvrocks:6666
-      - AUTH_TOKEN=授权码
+      #- AUTH_TOKEN=授权码
     networks:
       - moontv-network
     depends_on:
@@ -107,7 +107,7 @@ volumes:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/moontechlab/lunatv:latest
+    image: ghcr.io/huya1121/lunatv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
