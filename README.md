@@ -82,7 +82,6 @@ services:
       - PASSWORD=admin_password
       - NEXT_PUBLIC_STORAGE_TYPE=kvrocks
       - KVROCKS_URL=redis://moontv-kvrocks:6666
-      - AUTH_TOKEN=授权码
     networks:
       - moontv-network
     depends_on:
